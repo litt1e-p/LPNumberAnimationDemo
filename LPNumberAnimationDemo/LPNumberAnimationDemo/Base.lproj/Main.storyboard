@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzl-Pv-nTg" userLabel="colorView">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aly-wu-mBR" userLabel="CircleBaseView">
+                                        <rect key="frame" x="75" y="75" width="150" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ur-vo-QbO">
+                                                <rect key="frame" x="59" y="45" width="31" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFJ-Ld-wRp" userLabel="degree">
+                                                <rect key="frame" x="138" y="4" width="12" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="AFJ-Ld-wRp" firstAttribute="top" secondItem="aly-wu-mBR" secondAttribute="top" constant="4" id="9uq-LX-1Aw"/>
+                                            <constraint firstAttribute="trailing" secondItem="AFJ-Ld-wRp" secondAttribute="trailing" id="ACj-hG-OKi"/>
+                                            <constraint firstAttribute="height" constant="150" id="HeA-l2-Psy"/>
+                                            <constraint firstItem="6ur-vo-QbO" firstAttribute="centerX" secondItem="aly-wu-mBR" secondAttribute="centerX" id="Wkp-Zj-qXC"/>
+                                            <constraint firstItem="6ur-vo-QbO" firstAttribute="centerY" secondItem="aly-wu-mBR" secondAttribute="centerY" id="Zwy-ia-NIZ"/>
+                                            <constraint firstAttribute="width" constant="150" id="jKX-yH-dvy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="615-FK-Juw"/>
+                                    <constraint firstItem="aly-wu-mBR" firstAttribute="centerY" secondItem="fzl-Pv-nTg" secondAttribute="centerY" id="GkW-aT-Vkz"/>
+                                    <constraint firstAttribute="height" constant="300" id="Yv1-p4-fRn"/>
+                                    <constraint firstItem="aly-wu-mBR" firstAttribute="centerX" secondItem="fzl-Pv-nTg" secondAttribute="centerX" id="r0J-so-tS5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fzl-Pv-nTg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KgO-4B-Yjj"/>
+                            <constraint firstItem="fzl-Pv-nTg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ct1-R2-MlV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleBaseView" destination="aly-wu-mBR" id="b4K-2n-xkR"/>
+                        <outlet property="colorView" destination="fzl-Pv-nTg" id="mI8-wm-zcB"/>
+                        <outlet property="progressLabel" destination="6ur-vo-QbO" id="CXu-cD-ay5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="337"/>
+        </scene>
+    </scenes>
+</document>
