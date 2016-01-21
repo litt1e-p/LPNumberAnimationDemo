@@ -1,6 +1,6 @@
 # LPNumberAnimationDemo
 
-simple number or percent number animation demo
+a simple number or percent number animation demo
 
 # Screenshot
 
